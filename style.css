@@ -1,4 +1,176 @@
-body {
-	background-color: red;
+/* INTRO PAGE STYLING */
+body#index {
+	background: #6A9113;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #141517, #6A9113);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #141517, #6A9113); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	position:relative;
+	overflow:auto;
+	font-family: 'Barrio', cursive;
+
+}
+
+a.navbar-brand {
+	font-size: 20px;
+	font-family: 'Barrio', cursive;
+
 	}
+
+.navbar {
+	font-family: 'Barrio', cursive;
+
+}
+
+.navbar-default .navbar-brand {
+	position:relative;
+	font-size: 495%;
+    color: #00ff04;
+    background-color: black;
 	
+}
+
+.navbar-default {
+    background-color: #080808;
+    border-color: #080808;
+	text-align:center;
+	position: fixed;
+}
+
+
+.navbar-header {
+  margin:auto
+}
+
+.navbar-nav {
+    float: left;
+}
+
+.nav {
+	font-family: 'Barrio', cursive;
+	padding-left: 50%;
+	font-size: 177%;
+}
+
+
+
+
+
+h3.header {
+	font-size: 50px;
+	color:chartreuse;
+	
+}
+
+h2.latest {
+	font-size: 30px;
+	color: yellowgreen;
+	text-align:left-side ;
+	margin-left:30%;
+}
+
+h2.latest-videos {
+	font-size: 30px;
+	color: yellowgreen;
+	text-align: center;
+    margin-left: -24%;
+	}
+
+
+
+
+p.slogan {
+	font-size: 30px;
+	color:chartreuse;
+}
+
+li.review {
+	
+}
+
+li.latest {
+
+	}
+
+li.videos {
+
+}	
+
+li.dropdown {
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #00ff04;
+}
+
+	
+
+
+.carousel {
+    position: relative;
+	background-color: white;
+	width: 550px;
+	margin-left: 14%;
+}
+
+
+.carousel-inner {
+    width: 499px;
+    border-radius: 1110px;
+	margin: auto;
+}
+
+div.jumbotron {
+	background-color: white;
+	position:relative;
+	margin-top: 12%;
+}
+
+
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #647120;  
+}
+
+
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #333;
+    background-color: green;
+	font-size: 30px;
+}
+
+.col-md-4 {
+	padding-top: 8%;
+}
+
+
+
+
+#slides_control > div{
+  height: 200px;
+}
+img{
+  margin:auto;
+  width: 600px;
+}
+#slides_control {
+  position:relative;
+  width: 550px
+}
+
+
+
+/* Registration page */ 
+.username {
+	
+
+/*Review page */
+
+
+.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+}	
+
