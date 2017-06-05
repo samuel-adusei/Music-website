@@ -1,10 +1,7 @@
 /* INTRO PAGE STYLING */
 body#index {
-	background: #6A9113;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #141517, #6A9113);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #141517, #6A9113); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-color:white;
 	position:relative;
-	overflow:auto;
 	font-family: 'Barrio', cursive;
 
 }
@@ -12,7 +9,7 @@ background: linear-gradient(to right, #141517, #6A9113); /* W3C, IE 10+/ Edge, F
 a.navbar-brand {
 	font-size: 20px;
 	font-family: 'Barrio', cursive;
-
+	
 	}
 
 .navbar {
@@ -20,24 +17,41 @@ a.navbar-brand {
 
 }
 
+.container {
+	max-width: 730px;
+}
+
+.container>.navbar-header {
+    margin-right: -20%;
+    margin-left: -58%;
+    padding-right: 33%;
+}	
+
 .navbar-default .navbar-brand {
 	position:relative;
-	font-size: 495%;
-    color: #00ff04;
-    background-color: black;
-	
+	font-size: 475%;
+    color: #00ff04;	
 }
 
 .navbar-default {
     background-color: #080808;
     border-color: #080808;
-	text-align:center;
 	position: fixed;
+background: #5A3F37;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #2C7744, #5A3F37);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #2C7744, #5A3F37); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
+.glyphicon-grain:before {
+    content: "\e239";
+    text-align: center;
+}
 
 .navbar-header {
-  margin:auto
+  margin:auto;
+  margin-right: -16%;
+  padding-left: 24%;
 }
 
 .navbar-nav {
@@ -46,12 +60,9 @@ a.navbar-brand {
 
 .nav {
 	font-family: 'Barrio', cursive;
-	padding-left: 50%;
-	font-size: 177%;
+	padding-left: 66%;
+	font-size: 157%;
 }
-
-
-
 
 
 h3.header {
@@ -74,6 +85,11 @@ h2.latest-videos {
     margin-left: -24%;
 	}
 
+.glyphicon-grain:before {
+    content: "\e239";
+    text-align: -webkit-left;
+}
+
 
 
 
@@ -83,18 +99,32 @@ p.slogan {
 }
 
 li.review {
+	background: #BA8B02;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	
 }
 
 li.latest {
+background: #BA8B02;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 	}
 
 li.videos {
+background: #BA8B02;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }	
 
 li.dropdown {
+	background: #BA8B02;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -106,7 +136,10 @@ li.dropdown {
 
 .carousel {
     position: relative;
-	background-color: white;
+background: #DCE35B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	width: 550px;
 	margin-left: 14%;
 }
@@ -116,12 +149,19 @@ li.dropdown {
     width: 499px;
     border-radius: 1110px;
 	margin: auto;
+	background: #DCE35B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 div.jumbotron {
 	background-color: white;
 	position:relative;
-	margin-top: 12%;
+	margin-top: 54%;
+	background: #DCE35B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
@@ -156,6 +196,7 @@ img{
   position:relative;
   width: 550px
 }
+
 
 
 

@@ -1,4 +1,7 @@
 <?php
+$con = mysqli_connect("localhost","root","","dataform")
+or die ("connection was not created"); //saved connection in variable
+
 
 ?>
 <!-- first got to sort php and mysql -->
@@ -8,11 +11,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> GAINE GREEN UK MUSIC URBAN SITE </title>
+<title> NEW UK UK MUSIC URBAN SITE </title>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="latest.css">
+
 </head>
 <body id="index">
 
@@ -35,7 +41,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="intro.php">GAINE GREEN<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>	 </a>
+              <a class="navbar-brand" href="intro.php">NEW UK<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>	 </a>
             </div>
         
 		        
@@ -58,7 +64,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Sign in</a></li>
+                    <li><a href="">Login</a></li>
                     <li role="separator" class="divider"></li>
                     <li class="dropdown-header">Sign up</li>
                     <li><a href="registration.php">Registration page</a></li>
@@ -67,10 +73,24 @@
               </ul>
             </div>
           </div>
-		  
+		  </div>
         </nav>
 		
-		
+		<div class="Container">
+  <ul class="Carousel">
+	<
+    <li class="Items Front">
+      <div class="item">
+		<p> Trending Album </p>
+        <img src="http://www.viperial5.co/uploads/albums/4295/reeko-squeeze-lns-5926d8490e023-500x500.jpg" alt="Chicago" style="width:100%;"></li>
+	
+    <li class="Items Left">2</li>
+    <li class="Items Left2">3</li> 
+    <li class="Items Right">4</li>
+    <li class="Items Right2">5</li>  
+  </ul>
+</div>
+</div>
     
 <div class="jumbotron">
       <div class="container">
@@ -108,7 +128,9 @@
     </div>
   </div>
 </div>
-</div>	
+</div>
+
+	
       <div class="col-md-5">
 	        <div class="container">
 	    <h2 class="latest"> Trending tracks</h2>
@@ -214,8 +236,10 @@
   </div>
   </div>
  </div>
+ </div>
+ 
   </span>
-  
+ <script type= "text/javascript" src="latest.js"> </script>  
 <script type= "text/javascript" src="intro.js"> </script>  
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>

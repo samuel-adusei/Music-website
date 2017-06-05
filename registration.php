@@ -5,7 +5,6 @@
 $con = mysqli_connect("localhost","root","","dataform")
 or die ("connection was not created"); //saved connection in variable
 
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,12 +13,13 @@ or die ("connection was not created"); //saved connection in variable
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <title> register </title>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="register.css">
 </head>
 <body class="index">
 <div class="navbar-wrapper">
       <div class="container">
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -28,18 +28,37 @@ or die ("connection was not created"); //saved connection in variable
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="intro.php">GAINE GREEN</a>
+             <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="intro.php">NEW UK<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>	 </a>
+            </div>
+        
+		        
+            </div>
+          </div>
+		         <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="review"><a href="review.php">Review</a></li>
                 <li class="latest"><a href="latest.php">The Latest</a></li>
-                <li class="videos"><a href="videos.php">Videos</a></li>
+				<li class="videos"><a href="videos.php">Videos</a></li>
 
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Sign in</a></li>
+                    <li><a href="">Login</a></li>
                     <li role="separator" class="divider"></li>
                     <li class="dropdown-header">Sign up</li>
                     <li><a href="registration.php">Registration page</a></li>
@@ -48,17 +67,21 @@ or die ("connection was not created"); //saved connection in variable
               </ul>
             </div>
           </div>
+		  </div>
         </nav>
-    </div>
-
-<form action="register.php" class="signup" method="POST">
+		
+<div class="reggy">
+<form action="registration.php" class="signup" method="POST">
 Enter Username:<input type="text" class="username" name="username" required="required"/></br>
 Enter Password:<input type="password" class="password" name="password"  required="required"/></br>
 Enter Email:<input type="email"	class="email" name="email" required="required"/></br>
-<input type="submit" name="register"	value="register" />
+<input type="submit" name="registration"	value="register" />
+</div>
 </form>
+
+
 <?php
-	if(isset($_POST['register'])){
+	if(isset($_POST['registration'])){
 //isset is a function if something has happened in the page and sub is a button
 	 $username = $_POST['username']; //calls out the method from our phone and shows out
 	 $password = $_POST['password'];
@@ -69,23 +92,12 @@ Enter Email:<input type="email"	class="email" name="email" required="required"/>
 	$run = mysqli_query($con,$insert); // this first ask for the server connection and then the query where trying to run
 	
 	if($run)	{
-		echo "<h3> Registration successful, thanks </h3>";
+		 echo"<h3> Registration successful, thanks </h3>";
 	}
 	 
 	}
 	?>
-	</br>
-	<!-- creating a table of our data -->
-	<table width="500" bgcolor="orange" border="2">
-		
-		<tr>
-		<th>S.N</th>
-		<th>Name</th>
-		<th>Password</th>
-		<th>Email</th>
-		<th>Edit</th>
-		<th>Delete</th>	
-			</tr>
+
 			<?php
 				
 				$select = "select * from users";
@@ -104,14 +116,15 @@ Enter Email:<input type="email"	class="email" name="email" required="required"/>
 			?>
 <!-- here we create a visible table showing the details from the from -->
 		<tr>
-			<td><?php echo $user_id; ?></td>
-			<td><?php echo $user_name;?></td>
-			<td><?php echo $user_pass;?></td>
-			<td><?php echo $user_email;?></td>
-			<td><a href="register.php">Edit</a></td>
-			<td><a href="register.php?delete=<?php echo $user_id; ?>">Delete</a></td>
+			<td><?php  $user_id; ?></td>
+			<td><?php  $user_name;?></td>
+			<td><?php  $user_pass;?></td>
+			<td><?php  $user_email;?></td>
+			<td><a href="registration.php"></a></td>
+			<td><a href="registration.php?delete=<?php  $user_id; ?>"></a></td>
 				</tr>
-				<?php	}	?>	
+				<?php	}
+				?>	
 			
 	</table>
 	<?php
@@ -123,7 +136,7 @@ Enter Email:<input type="email"	class="email" name="email" required="required"/>
 			
 			$run_delete = mysqli_query($con,$delete);	//created a query to do mutiple deletes
 				if($run_delete){
-					echo "<script>window.open('register.php','_self')</script>";
+					 "<script>window.open('registration.php','_self')</script>";
 				}// this refreshes the window of your registration page thats what the self does 
 		
 		}
